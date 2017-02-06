@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryLight">#BBDEFB</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textIcons">#FFFFFF</color>
+    <color name="textSecondary">#727272</color>
+    <color name="colorDivider">#B6B6B6</color> -->
+
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorPrimaryLight">#BBDEFB</color>
+    <color name="colorAccent">#00BCD4</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#727272</color>
+    <color name="textIcons">#FFFFFF</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="colorError">#d50404</color>
+
+    <color name="asiento_disponible">#8bc34a</color>
+    <color name="asiento_ocupado">#B6B6B6</color>
+    <color name="asiento_selec">#f44336</color>
+</resources>

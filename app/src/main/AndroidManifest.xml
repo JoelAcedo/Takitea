@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="idi.acedo.joel.ventadeentradas">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewObraActivity"
+            android:label="@string/title_activity_new_obra"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="idi.acedo.joel.ventadeentradas.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ObraDetail"
+            android:label="@string/title_activity_obra_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="idi.acedo.joel.ventadeentradas.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Butacas"
+            android:label="@string/title_activity_butacas"
+            android:parentActivityName=".ObraDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="idi.acedo.joel.ventadeentradas.ObraDetail" />
+        </activity>
+        <activity
+            android:name=".LlistaClients"
+            android:label="@string/title_activity_llista_clients"
+            android:parentActivityName=".ObraDetail"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="idi.acedo.joel.ventadeentradas.ObraDetail" />
+        </activity>
+        <activity
+            android:name=".ConfirmActivity"
+            android:label="@string/title_activity_confirm"
+            android:parentActivityName=".Butacas"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="idi.acedo.joel.ventadeentradas.Butacas" />
+        </activity>
+        <activity
+            android:name=".SobreTakitea"
+            android:label="@string/title_activity_sobre_takitea"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="idi.acedo.joel.ventadeentradas.MainActivity" />
+        </activity>
+    </application>
+
+</manifest> <!-- <action android:name="idi.acedo.joel.ventadeentradas.DATABASE_CHANGED"/> -->

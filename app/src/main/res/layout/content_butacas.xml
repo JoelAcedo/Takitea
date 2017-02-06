@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Butacas"
+    tools:showIn="@layout/activity_butacas">
+
+
+    <TextView
+        android:id="@+id/butaques_text_rel"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/select_seients"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pati_butaques"
+        android:layout_below="@+id/butaques_text_rel"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/pati_butaques">
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/asiento_disponible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/le_libre"
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/asiento_ocupado"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/le_ocup"
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/asiento_selec"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/le_sele"
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_above="@+id/butaques_buy"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/normal_text_rels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/entrade_normal_string"
+            android:textSize="24dp"
+            android:textColor="@color/textSecondary"
+            android:layout_above="@+id/normal_price"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/normal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="10.45 €"
+            android:textSize="13dp"
+            android:textColor="@color/colorAccent"
+            android:layout_above="@+id/reduida_text_rels"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/normal_count_rels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:text="0"
+            android:textSize="32dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/textSecondary"
+            android:layout_toLeftOf="@+id/minus_normal"
+            android:layout_above="@+id/reduida_count_rels"/>
+
+        <Button
+            android:id="@+id/minus_normal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/add_normal"
+            android:layout_above="@+id/reduida_count_rels"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableRight="@drawable/minus_accent_24"/>
+
+        <Button
+            android:id="@+id/add_normal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/reduida_count_rels"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableRight="@drawable/plus_accent_24"/>
+
+
+
+
+        <TextView
+            android:id="@+id/reduida_text_rels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/entrade_reduida_string"
+            android:textSize="24dp"
+            android:textColor="@color/textSecondary"
+            android:layout_above="@+id/reduida_price"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/reduida_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="7.55 €"
+            android:textSize="13dp"
+            android:textColor="@color/colorAccent"
+            android:layout_above="@+id/divider_total"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/reduida_count_rels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:text="0"
+            android:textSize="32dp"
+            android:textColor="@color/textSecondary"
+            android:layout_toLeftOf="@+id/minus_reduit"
+            android:layout_above="@+id/divider_total"/>
+
+        <Button
+            android:id="@+id/minus_reduit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingRight="8dp"
+            android:layout_toLeftOf="@+id/add_reduit"
+            android:layout_above="@+id/divider_total"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableRight="@drawable/minus_accent_24"/>
+
+        <Button
+            android:id="@+id/add_reduit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/divider_total"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableRight="@drawable/plus_accent_24"/>
+
+
+        <View
+            android:id="@+id/divider_total"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            style="@style/Divider"
+            android:layout_above="@+id/total_text_rel"/>
+
+        <TextView
+            android:id="@+id/total_text_rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/comprar_text_butaca"
+            android:textSize="32dp"
+            android:textColor="@color/textSecondary"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/total_count_rels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="0.0 €"
+            android:textSize="32dp"
+            android:textColor="@color/textSecondary"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/butaques_buy"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/comprar_text"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textSize="22dp"
+        style="@style/Widget.AppCompat.Button.Colored" />
+
+</RelativeLayout>

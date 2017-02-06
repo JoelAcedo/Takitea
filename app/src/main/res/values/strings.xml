@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Takitea</string>
+    <string name="title_activity_main">Cartellera</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_obra">Afegir obra</string>
+
+
+    <!-- Aafegir obra -->
+
+    <string name="basic_section">Informació bàsica</string>
+
+    <string name="title_hint">Títol</string>
+    <string name="description_hint">Descripció</string>
+
+    <string name="time_hint">Duració (Minuts)</string>
+    <string name="time_helper">en minuts</string>
+
+    <string name="price_hint">Preu (€)</string>
+
+    <string name="cover_section">Portada (Opcional)</string>
+    <string name="camera_text">Càmera</string>
+    <string name="galery_text">Galeria</string>
+
+    <string name="sessions_section">Sessions</string>
+    <string name="add_sessions_button">Afegir sessió</string>
+
+    <string name="confirm_add">Confirmar</string>
+
+    <string name="required_data">Obligatori</string>
+    <string name="invalid_data">Valor invalid</string>
+
+    <string name="error_session">Ha d\'existir com a mínim una sessió</string>
+    <string name="correct_add">Obra afegida correctament</string>
+
+    <string name="error_date">La sessió no es pot programar abans d\'ara</string>
+
+    <!-- Detalles obra -->
+    <string name="title_activity_obra_detail">Informació</string>
+    <string name="desciption_section">Descripció</string>
+    <string name="comprar_text">Comprar</string>
+    <string name="ventes_text">Vendes</string>
+
+    <!-- Butaques -->
+    <string name="title_activity_butacas">Entrades</string>
+    <string name="select_seients">Seleccioni les butaques</string>
+    <string name="comprar_text_butaca">Total :</string>
+
+    <string name="entrade_normal_string">Tarifa normal: </string>
+    <string name="entrade_reduida_string">Tarifa reduïda: </string>
+    <string name="help_entrada_reduida">Carnet jove, aturat, menor de 10 anys</string>
+
+    <string name="le_libre">Lliure</string>
+    <string name="le_ocup">Ocupat</string>
+    <string name="le_sele">Seleccionat</string>
+
+    <string name="title_activity_llista_clients">Llistat de vendes</string>
+
+    <string name="error_butacas">Seleccioni el tipus d\'entrada per a tots els seients triats</string>
+    <string name="error_cero">Seleccioni al menys un seient</string>
+
+    <string name="title_activity_confirm">Confirmar compra</string>
+
+    <string name="nom_hint">Nom i cognoms</string>
+    <string name="email_hint">Email</string>
+    <string name="confirm">Confirmar compra</string>
+
+    <string name="error_mail">Email incorrecte</string>
+
+    <string name="confrim_correct">Compra realitzada correctament</string>
+
+    <string name="about">Sobre Takitea</string>
+    <string name="title_activity_sobre_takitea">Sobre Takitea</string>
+
+    <string name="info_takitea">Takitea és una aplicació per gestionar la venda d\'entrades de les obres del nostre teatre. A través de la aplicació
+ es poden afegir obres i sessions d\'aquestes, a més es poden vendre entrades, amb tarifa normal o reduïda, triant els seients desitjats. A més de veure un llistat
+ de tots els clients d\'una determinada sessió.</string>
+
+    <string name="contact">Contacte</string>
+
+    <string name="joel_nom">Joel Acedo Delgado</string>
+    <string name="joel_email">joel.acedo@est.fib.upc.edu</string>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="5dp">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="110dp"
+        android:layout_height="160dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:background="@color/colorAccent"
+        android:layout_alignParentLeft="true" />
+
+    <!--android:src="@drawable/star_wars"-->
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7.5dp"
+        android:text="Star Wars VII: El despertar de la fuerza"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/cover"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/calendar_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/calendar"
+        android:layout_toRightOf="@+id/cover"
+        android:layout_above="@+id/time_img"/>
+
+    <TextView
+        android:id="@+id/text_dates"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+        android:text="22/04/16 - 15/07/16"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/calendar_img"
+        android:layout_above="@+id/text_time"/>
+
+    <ImageView
+        android:id="@+id/time_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/timer"
+        android:layout_toRightOf="@+id/cover"
+        android:layout_above="@+id/btn_more_info"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginBottom="2.5dp"
+        android:text="113 minuts"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/time_img"
+        android:layout_above="@+id/btn_more_info"/>
+
+    <Button
+        android:id="@+id/delete_button_obra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingRight="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginLeft="-8dp"
+        android:layout_toRightOf="@id/cover"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableRight="@drawable/delete_accent_24"/>
+
+    <Button
+        android:id="@+id/btn_more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Més informació"
+        android:textSize="15sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+    <!-- "@style/Widget.AppCompat.Button.Colored" -->
+
+</RelativeLayout>
+

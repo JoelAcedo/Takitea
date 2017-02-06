@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp">
+
+    <TextView
+        android:id="@+id/date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="04/06/2016 :"
+        android:textSize="16dp"
+        android:textColor="@color/textSecondary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/day_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_text_view"
+        android:text="Dissabte"
+        android:textSize="11dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/time_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="21:30"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/delete_button_session"
+        android:textColor="@color/textSecondary"/>
+
+    <Button
+        android:id="@+id/delete_button_session"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:drawableRight="@drawable/delete_accent_24"/>
+
+</RelativeLayout>

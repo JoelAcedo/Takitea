@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NewObraActivity"
+    tools:showIn="@layout/activity_new_obra">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="14dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/basic_section"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_input_title">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/title_hint"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_input_description">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="@string/description_hint"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_input_time">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="@string/time_hint" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_input_price">
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/price_hint"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <!-- <View
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            style="@style/Divider" /> -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/cover_section"/>
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="110dp"
+            android:layout_height="160dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/select_image_camera"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="@string/camera_text"
+                android:textColor="@color/textIcons"/>
+
+            <Button
+                android:id="@+id/select_image_galery"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="@string/galery_text"
+                android:textColor="@color/textIcons"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/sessions_section"/>
+
+        <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <TextView
+                android:id="@+id/date_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="04/06/2016 :"
+                android:textSize="16dp"
+                android:textColor="@color/textSecondary"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_text_view"
+                android:text="Dissabte"
+                android:textSize="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="20:00 - 21:30"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/delete_button_session"
+                android:textColor="@color/textSecondary"/>
+
+            <Button
+                android:id="@+id/delete_button_session"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                style="?android:attr/borderlessButtonStyle"
+                android:drawableRight="@drawable/delete_accent_24"/>
+
+        </RelativeLayout> -->
+
+        <TextView
+            android:id="@+id/error_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/error_session"
+            android:visibility="gone"
+            android:textSize="12dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textColor="@color/colorError"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/add_session_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        
+        <Button
+            android:id="@+id/add_session"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/plus_white_24"
+            android:text="@string/add_sessions_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@color/textIcons"/>
+
+        <Button
+            android:id="@+id/confirm_obra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/confirm_add"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textColor="@color/textIcons"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
